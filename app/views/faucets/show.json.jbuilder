@@ -1,0 +1,1 @@
+json.partial! "faucets/faucet", faucet: @faucet

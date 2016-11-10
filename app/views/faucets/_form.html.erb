@@ -1,0 +1,69 @@
+<%= form_for(@faucet) do |f| %>
+  <% if @faucet.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@faucet.errors.count, "error") %> prohibited this faucet from being saved:</h2>
+
+      <ul>
+      <% @faucet.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :category %><br>
+    <%= f.text_field :category %>
+  </div>
+  <div class="field">
+    <%= f.label :manufacturer %><br>
+    <%= f.text_field :manufacturer %>
+  </div>
+  <div class="field">
+    <%= f.label :model %><br>
+    <%= f.text_field :model %>
+  </div>
+  <div class="field">
+    <%= f.label :discription %><br>
+    <%= f.text_field :discription %>
+  </div>
+  <div class="field">
+    <%= f.label :main_img %><br>
+    <%= f.text_field :main_img %>
+  </div>
+  <div class="field">
+    <%= f.label :sellingprice %><br>
+    <%= f.number_field :sellingprice %>
+  </div>
+  <div class="field">
+    <%= f.label :properprice %><br>
+    <%= f.number_field :properprice %>
+  </div>
+  <div class="field">
+    <%= f.label :discountrate %><br>
+    <%= f.number_field :discountrate %>
+  </div>
+  <div class="field">
+    <%= f.label :buyingprice %><br>
+    <%= f.number_field :buyingprice %>
+  </div>
+  <div class="field">
+    <%= f.label :fn1_title %><br>
+    <%= f.text_field :fn1_title %>
+  </div>
+  <div class="field">
+    <%= f.label :fn1_img %><br>
+    <%= f.text_field :fn1_img %>
+  </div>
+  <div class="field">
+    <%= f.label :fn1_content %><br>
+    <%= f.text_field :fn1_content %>
+  </div>
+  <div class="field">
+    <%= f.label :fn1_url %><br>
+    <%= f.text_field :fn1_url %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

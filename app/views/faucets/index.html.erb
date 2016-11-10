@@ -1,0 +1,51 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Faucets</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Category</th>
+      <th>Manufacturer</th>
+      <th>Model</th>
+      <th>Discription</th>
+      <th>Main img</th>
+      <th>Sellingprice</th>
+      <th>Properprice</th>
+      <th>Discountrate</th>
+      <th>Buyingprice</th>
+      <th>Fn1 title</th>
+      <th>Fn1 img</th>
+      <th>Fn1 content</th>
+      <th>Fn1 url</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @faucets.each do |faucet| %>
+      <tr>
+        <td><%= faucet.category %></td>
+        <td><%= faucet.manufacturer %></td>
+        <td><%= faucet.model %></td>
+        <td><%= faucet.discription %></td>
+        <td><%= faucet.main_img %></td>
+        <td><%= faucet.sellingprice %></td>
+        <td><%= faucet.properprice %></td>
+        <td><%= faucet.discountrate %></td>
+        <td><%= faucet.buyingprice %></td>
+        <td><%= faucet.fn1_title %></td>
+        <td><%= faucet.fn1_img %></td>
+        <td><%= faucet.fn1_content %></td>
+        <td><%= faucet.fn1_url %></td>
+        <td><%= link_to 'Show', faucet %></td>
+        <td><%= link_to 'Edit', edit_faucet_path(faucet) %></td>
+        <td><%= link_to 'Destroy', faucet, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Faucet', new_faucet_path %>

@@ -1,0 +1,2 @@
+json.extract! faucet, :id, :category, :manufacturer, :model, :discription, :main_img, :sellingprice, :properprice, :discountrate, :buyingprice, :fn1_title, :fn1_img, :fn1_content, :fn1_url, :created_at, :updated_at
+json.url faucet_url(faucet, format: :json)

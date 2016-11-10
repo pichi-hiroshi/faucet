@@ -1,0 +1,23 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  kbratio: 1
+  oasyssegment: MyString
+  company: 
+  branch: MyString
+  postalcode: MyString
+  address: MyString
+  tel: MyString
+  oasyseigyo: MyString
+  contractor: MyString
+
+two:
+  kbratio: 1
+  oasyssegment: MyString
+  company: 
+  branch: MyString
+  postalcode: MyString
+  address: MyString
+  tel: MyString
+  oasyseigyo: MyString
+  contractor: MyString

@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  pj_name: MyString
+  management_id: 1
+  originalkbratio: 1
+
+two:
+  pj_name: MyString
+  management_id: 1
+  originalkbratio: 1

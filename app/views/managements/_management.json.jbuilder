@@ -1,0 +1,2 @@
+json.extract! management, :id, :kbratio, :oasyssegment, :company, :branch, :postalcode, :address, :tel, :oasyseigyo, :contractor, :created_at, :updated_at
+json.url management_url(management, format: :json)

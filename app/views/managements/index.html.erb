@@ -1,0 +1,43 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Managements</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Kbratio</th>
+      <th>Oasyssegment</th>
+      <th>Company</th>
+      <th>Branch</th>
+      <th>Postalcode</th>
+      <th>Address</th>
+      <th>Tel</th>
+      <th>Oasyseigyo</th>
+      <th>Contractor</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @managements.each do |management| %>
+      <tr>
+        <td><%= management.kbratio %></td>
+        <td><%= management.oasyssegment %></td>
+        <td><%= management.company %></td>
+        <td><%= management.branch %></td>
+        <td><%= management.postalcode %></td>
+        <td><%= management.address %></td>
+        <td><%= management.tel %></td>
+        <td><%= management.oasyseigyo %></td>
+        <td><%= management.contractor %></td>
+        <td><%= link_to 'Show', management %></td>
+        <td><%= link_to 'Edit', edit_management_path(management) %></td>
+        <td><%= link_to 'Destroy', management, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Management', new_management_path %>
